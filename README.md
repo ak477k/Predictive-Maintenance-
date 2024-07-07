@@ -15,6 +15,6 @@ The data required for this project includes sensor readings, operational logs, a
 
 
 Acknowledgements:
-Thanks to my tema members who helped in the development of this project.
+Thanks to my team members who helped in the development of this project.
 Scikit-Learn for providing easy-to-use machine learning tools.
 Pandas for data manipulation and analysis.
