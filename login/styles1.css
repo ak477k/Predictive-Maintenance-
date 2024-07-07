@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.png'); /* Path to your blurred background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Place the background behind other content */
+}
+
+.resultpage img{
+    transform:translate(10%,0%)
+}
+
+.resultpage button{
+      transform:translate(20%,0%)
+}
+
+.quiz-container{
+    width: 90%;
+    position: absolute;
+    top: 50%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center the button */
+    padding: 10px 20px; /* Adjust button size */
+   
+    color: #fff; /* Adjust text color */
+    border: none;
+    border-radius: 5px; /* Adjust border radius */
+    z-index: 1; /* Place the button above the background */
+}
+
+
+  
+
+input[type="radio"] {
+    margin-right: 5px;
+    display: none;
+}
+
+
+
+/* .quiz-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+} */
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    
+}
+
+/* label:hover {
+    background-color: #f0f0f0;
+} */
+
+
+.question-title {
+    font-size: 24px;
+    color: #333;
+    display: none;
+}
+
+.question-text {
+    font-size: 15px;
+    color: #faf8f8;
+    border: 5px solid yellow;
+    border-radius: 30%;
+    background-color: blue;
+    
+}
+
+
+
+.divques {
+    width: 85%;
+    max-width: 400px;
+    margin: 2vw 5vw;
+    padding: 10px; /* Increase padding for spacing */
+    background-color: #13ddc2; /* White background */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    text-align: center;
+    font-size: 18px; /* Larger font size */
+    color: #333; /* Dark text color */
+    line-height: 1.5;
+    transform: translate(-5%, -20%);
+    margin-top: 20%;
+}
+
+
+
+
+/* Style for the option containers */
+.option-container {
+    display: inline-block; /* Display options in a line */
+    width: 45%; /* Set a fixed width for each option container */
+    margin-right: 5%; /* Add spacing between options (horizontal gap) */
+    margin-bottom: 5px; /* Add spacing between rows of options (vertical gap) */
+    border: 1px solid #ccc; /* Add a border around each option container */
+    padding: 10px; /* Add padding inside each option container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    /* background-color: blueviolet; */
+    font-size: 15px;
+    color: #faf8f8;
+    border: 5px solid yellow;
+    border-radius: 30%;
+    background-color: blue;
+    text-align: center;
+  
+}
+
+/* Style for the radio buttons */
+.option-container input[type="radio"] {
+    margin-right: 5px; /* Add spacing between the radio button and label text */
+    
+}
+
+/* Style for the label text */
+.option-container label {
+    font-size: 16px; /* Set the font size */
+    color: #ddd; /* Set the text color */
+    font-weight: bold; 
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+p{
+    font-size: 24px; /* Font size for the score */
+    color: #333; /* Text color */
+     margin-bottom: 20px;
+
+   
+}
+
+.questiontxt{
+    padding: 10px;
+    text-align: center;
+    border: 5px solid yellow;
+    border-radius: 30%;
+    background-color: blue;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Add styling for correct and incorrect answers */
+.option-correct {
+    background-color: #4CAF50; /* Green background for correct answers */
+    color: white; /* White text for correct answers */
+}
+
+.option-incorrect {
+    background-color: #f30606; /* Red background for incorrect answers */
+    color: white; /* White text for incorrect answers */
+}
+.resultpage{
+    text-align: center;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    
+
+}
+.resultpage h1{
+    color: blue;
+    font-weight: 800px;
+    font-size: 60px;
+    text-align: center;
+    transform: translate(-10%, -5%);
+    
+}
+
+.belowthankyou{
+    
+    border-radius: 10%;
+    background-color: none; 
+    width: 400px;
+    transform: translate(45%, -10%);
+    
+}
+
+
+.resultpage p{
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-size: 35px;
+    
+}
+
+
+#restart-button{
+    margin: 20px;
+    font-size: 30px;
+    border: 2px solid yellow;
+    border-radius: 10px; 
+    background-color: rgb(60, 28, 204);
+    color: white; 
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Use space-between to push the images to the left and right */
+    padding: 10px 50px;
+    position:absolute;
+    right:0;
+    color: #fff;
+}

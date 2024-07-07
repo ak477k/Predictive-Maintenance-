@@ -1,0 +1,153 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.quiz-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.quiz-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+label:hover {
+    background-color: #f0f0f0;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    display: none;
+}
+
+#submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    text-align: center;
+}
+
+#restart-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#restart-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    /* Your tablet-specific CSS styles go here */
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the container to fill the entire viewport */
+.home1 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url('bg.png');
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Adjust background position as needed */
+}
+
+/* Style the button */
+.my-button {
+    position: absolute;
+    top: 85%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center the button */
+    padding: 10px 20px; /* Adjust button size */
+    background-color: rgb(60, 28, 204); /* Adjust button color */
+    color: #fff; /* Adjust text color */
+    border: 6px solid yellow;
+    border-radius: 20px; /* Adjust border radius */
+    cursor: pointer;
+    z-index: 1; /* Place the button above the background */
+    font-size: 40px;
+    
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 1.6vw;
+    border-bottom: 2px solid red;
+  }
+
+  img {
+  
+    border-radius: 4px;
+    padding: 5px 2px;
+    width: 90px;
+  }
+
+  
+
